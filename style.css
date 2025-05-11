@@ -1,11 +1,24 @@
+.logo-img {
+  max-width: 100px;   /* default size */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    max-width: 80px;  /* smaller on tablets and phones */
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-img {
+    max-width: 60px;  /* smallest on phones */
+  }
+}
+
 .custom-navbar {
     background-color: rgb(247, 225, 225);
  }
-.footer{
-    background-color: rgb(247, 225, 225);
-    position: fixed bottom 0;
-    width: 100%;
- }
+
   .custom-text ul li a{
     font-weight:600;
     font-size: 20px;
@@ -28,3 +41,8 @@
  }
 .testimonial-card:hover{
     box-shadow: 0 0 10px rgb(240, 145, 145);}
+.footer{
+    background-color: rgb(247, 225, 225);
+    position: fixed bottom 0;
+    width: 100%;
+}
